@@ -91,7 +91,7 @@ export async function canViewAllTeams({ user }: Auth) {
   return user?.isAdmin ?? false;
 }
 
-export async function canEnforceTwoFactorAuthForTeam({ user }: Auth, teamId: string) {
+export async function canEnforceTwoFactorAuthForTeam({ user }: Auth, _teamId: string) {
   if (!user) {
     return false;
   }
