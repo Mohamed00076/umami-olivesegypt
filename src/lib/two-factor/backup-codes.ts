@@ -1,4 +1,4 @@
-import { randomBytes } from 'crypto';
+import { randomBytes } from 'node:crypto';
 import bcrypt from 'bcryptjs';
 
 const BACKUP_CODE_COUNT = 10;
